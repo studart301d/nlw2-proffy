@@ -35,6 +35,7 @@ function TeacherList() {
                 <TeacherItem />
                 <TeacherItem />
                 <TeacherItem />
+                <TeacherItem />
             </main>
         </div>
     );
