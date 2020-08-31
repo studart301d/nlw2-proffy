@@ -8,7 +8,8 @@ import backIcon from '../../assets/images/icons/back.svg';
 import './styles.css'
 
 interface PageHeaderProps {
-    title: string; // se não fosse obrigatorio era pra ter um "?" => ":"
+    title: string; // se não fosse obrigatorio era pra ter um "?" antes ":"
+    description?: string;
 }
 
 const PageHeader: React.FC<PageHeaderProps> = (props) =>  {
@@ -23,7 +24,7 @@ const PageHeader: React.FC<PageHeaderProps> = (props) =>  {
 
             <div className="header-content">
                 <strong>{props.title}</strong>
-
+                { props.description && <p>{props.description}</p> } 
                 {props.children}
             </div>
         </header>
